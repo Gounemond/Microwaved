@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MenuSelectionController : MonoBehaviour
 {
-     enum microwaveClasses { NORMIE, TANK, SCOUT, MASTERCHEF };
-
     public PodPlayerController[] podPlayer;
 
     public GameObject[] microwavePrefabs;
