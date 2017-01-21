@@ -1,0 +1,131 @@
+fileFormatVersion: 2
+guid: 8bc855fa9f2cb954bb3e82e73cc6e14e
+timeCreated: 1485031050
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: antina
+    100002: //RootNode
+    100004: be_baffocentro_l_END
+    100006: be_baffocentro_r_END
+    100008: be_sportello01
+    100010: bn_baffocentro
+    100012: bn_baffocentro_6_Goal
+    100014: bn_baffocentro_6_Goal_2
+    100016: bn_baffocentro_l_A01
+    100018: bn_baffocentro_l_B01
+    100020: bn_baffocentro_l_C01
+    100022: bn_baffocentro_l_D01
+    100024: bn_baffocentro_l_E01
+    100026: bn_baffocentro_r_A01
+    100028: bn_baffocentro_r_B01
+    100030: bn_baffocentro_r_C01
+    100032: bn_baffocentro_r_D01
+    100034: bn_baffocentro_r_E01
+    100036: DOOR
+    100038: ROOT_mesh
+    100040: ROOT_sportello
+    100042: Skin
+    100044: Skin_2
+    100046: Skin_2_2
+    100048: Skin_3
+    400000: antina
+    400002: //RootNode
+    400004: be_baffocentro_l_END
+    400006: be_baffocentro_r_END
+    400008: be_sportello01
+    400010: bn_baffocentro
+    400012: bn_baffocentro_6_Goal
+    400014: bn_baffocentro_6_Goal_2
+    400016: bn_baffocentro_l_A01
+    400018: bn_baffocentro_l_B01
+    400020: bn_baffocentro_l_C01
+    400022: bn_baffocentro_l_D01
+    400024: bn_baffocentro_l_E01
+    400026: bn_baffocentro_r_A01
+    400028: bn_baffocentro_r_B01
+    400030: bn_baffocentro_r_C01
+    400032: bn_baffocentro_r_D01
+    400034: bn_baffocentro_r_E01
+    400036: DOOR
+    400038: ROOT_mesh
+    400040: ROOT_sportello
+    400042: Skin
+    400044: Skin_2
+    400046: Skin_2_2
+    400048: Skin_3
+    4300000: DOOR
+    4300002: antina
+    7400000: C4D Animation Take
+    9500000: //RootNode
+    13700000: antina
+    13700002: DOOR
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 3
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
