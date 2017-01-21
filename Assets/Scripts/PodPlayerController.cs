@@ -44,8 +44,8 @@ public class PodPlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && _podAnimEnded)
-        //if (_rewiredPlayer.GetButton("Attacking") && _podAnimEnded)
+        //if (Input.GetKeyDown(KeyCode.Space) && _podAnimEnded)
+        if (_rewiredPlayer.GetButton("Attacking") && _podAnimEnded)
         {
             SelectNextMicrowave();
         }
