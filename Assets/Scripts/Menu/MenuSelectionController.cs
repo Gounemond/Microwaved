@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Rewired;
 
 public class MenuSelectionController : MonoBehaviour
 {
@@ -19,19 +21,31 @@ public class MenuSelectionController : MonoBehaviour
             podPlayer[i].OnMicrowaveSelected += AddPlayerMicrowave;
         }
 
-        // Wait until at least 2 players have confirmed their will to kill each other
-        while (GameData.playerData.Count < 2)
+        // Wait until all the connected players have choosen and confirmed a microwave
+        while (GameData.playerData.Count < ReInput.controllers.GetJoysticks().Length && GameData.playerData.Count < 2)
         {
             yield return null;
         }
 
-        
-	}
+        //Countdown: 3
+        yield return new WaitForSeconds(1);
+
+        //Countdown: 2
+        yield return new WaitForSeconds(1);
+
+        //Countdown: 1
+        yield return new WaitForSeconds(1);
+
+        // Load next level
+        GameData.playerData.Sort();
+
+        SceneManager.LoadScene(1);
+    }
 	
 	// Update is called once per frame
-	void Update () {
-		
-	}
+	void Update ()
+    {
+    }
 
     public void AddPlayerMicrowave(int playerId, int microwaveIndex)
     {

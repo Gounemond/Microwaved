@@ -14,7 +14,7 @@ namespace UnityStandardAssets.Vehicles.Car
         private CarController m_Car; // the car controller we want to use
 
 
-        private void Awake()
+        private void Start()
         {
             // Get the Rewired Player object for this player and keep it for the duration of the character's lifetime
             rewiredPlayer = ReInput.players.GetPlayer(playerId);

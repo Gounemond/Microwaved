@@ -1,28 +1,41 @@
 fileFormatVersion: 2
-guid: eb6dd4a4e979b014fa7cceede96bf46c
-timeCreated: 1485021853
+guid: f95cf4b8f9a5de34fa54062f53e01c6f
+timeCreated: 1485030008
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: antina
-    100002: be_sportello01
-    100004: ROOT_MESH
-    100006: ROOT_sportello01
-    100008: Skin
-    100010: Skin_2
-    100012: //RootNode
-    400000: antina
-    400002: be_sportello01
-    400004: ROOT_MESH
-    400006: ROOT_sportello01
-    400008: Skin
-    400010: Skin_2
-    400012: //RootNode
-    4300000: antina
-    7400000: C4D Animation Take
+    100000: antenna
+    100002: bn_antenna01
+    100004: bn_antenna01_1
+    100006: bn_antenna01_2
+    100008: bn_antenna01_3
+    100010: bn_antenna01_4
+    100012: bn_antenna01_5
+    100014: Null_0
+    100016: Null_1
+    100018: ROOT_antenna
+    100020: ROOT_MESH
+    100022: Skin
+    100024: Spline
+    100026: //RootNode
+    400000: antenna
+    400002: bn_antenna01
+    400004: bn_antenna01_1
+    400006: bn_antenna01_2
+    400008: bn_antenna01_3
+    400010: bn_antenna01_4
+    400012: bn_antenna01_5
+    400014: Null_0
+    400016: Null_1
+    400018: ROOT_antenna
+    400020: ROOT_MESH
+    400022: Skin
+    400024: Spline
+    400026: //RootNode
+    4300000: antenna
     9500000: //RootNode
-    13700000: antina
+    13700000: antenna
   materials:
     importMaterials: 1
     materialName: 0
