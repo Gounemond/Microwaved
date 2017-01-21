@@ -6,15 +6,35 @@ public class MenuSelectionController : MonoBehaviour
 {
     public PodPlayerController[] podPlayer;
 
-    public GameObject[] microwavePrefabs;
+    public List<int> playerMicrowave;
 
 	// Use this for initialization
-	void Start () {
-		
+	IEnumerator Start ()
+    {
+        // Initializes player game data
+        GameData.playerData = new List<PlayerData>();	
+        for (int i = 0; i < podPlayer.Length; i++)
+        {
+            // Every time a player joins and confirms his participation, we add him in the playerdata with his choice
+            podPlayer[i].OnMicrowaveSelected += AddPlayerMicrowave;
+        }
+
+        // Wait until at least 2 players have confirmed their will to kill each other
+        while (GameData.playerData.Count < 2)
+        {
+            yield return null;
+        }
+
+        
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    public void AddPlayerMicrowave(int playerId, int microwaveIndex)
+    {
+        GameData.playerData.Add(new PlayerData(playerId,microwaveIndex));
+    }
 }

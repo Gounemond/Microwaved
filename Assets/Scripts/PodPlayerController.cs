@@ -1,17 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Rewired;
 
 public class PodPlayerController : MonoBehaviour {
 
-    public event ActionInt OnMicrowaveSelected;                     // This event is triggered everytime a microwave is selected
+    public event ActionInt OnMicrowaveSelected;                       // This event is called when the player has confirmed his microwave
 
-    public int microwaveClassSelected;
+    public int microwaveClassSelected = -1;
 
     // Callback signature
     // Has: Return of type 'void' and 1 parameter of type 'string'
-    public delegate void ActionInt(int index);
+    public delegate void ActionInt(int playerId, int indexMicrowave);
 
     public Animator podAnimator;
     public AnimationClip podTurningAnim;
@@ -21,6 +22,11 @@ public class PodPlayerController : MonoBehaviour {
     public GameObject playerMicrowave1;
     public GameObject playerMicrowave2;
 
+    public AudioSource podMechanism;
+    public AudioSource microwaveEngine;
+    public AudioSource microwaveCooking;
+
+
     public GameObject[] microwavePrefab;
 
     [Header ("Rewired stuff")]
@@ -29,6 +35,7 @@ public class PodPlayerController : MonoBehaviour {
     private Player _rewiredPlayer;
 
     private bool _podAnimEnded = true;
+    private bool _selectionConfirmed = false;
 
     void Awake()
     {
@@ -44,10 +51,25 @@ public class PodPlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        //if (Input.GetKeyDown(KeyCode.Space) && _podAnimEnded)
-        if (_rewiredPlayer.GetButton("Attacking") && _podAnimEnded)
+        // If the player hasn't confirmed his selection
+        if (!_selectionConfirmed)
         {
-            SelectNextMicrowave();
+            // Cycle through microwaves if the platform is not rotating
+            if (_rewiredPlayer.GetButton("Attacking") && _podAnimEnded)
+            {
+                SelectNextMicrowave();
+            }
+
+            if (_rewiredPlayer.GetButton("Cooking") && _podAnimEnded)
+            {
+                microwaveCooking.Play();
+                _selectionConfirmed = true;
+
+                if (OnMicrowaveSelected != null)
+                {
+                    OnMicrowaveSelected(playerId, microwaveClassSelected);
+                }
+            }
         }
 	}
 
@@ -55,7 +77,9 @@ public class PodPlayerController : MonoBehaviour {
     {
         _podAnimEnded = false;
         podAnimator.SetTrigger("Turn");
+        podMechanism.Play();
         yield return new WaitForSeconds(podTurningAnim.length);
+        microwaveEngine.Play();
         _podAnimEnded = true;
     }
 
@@ -71,6 +95,7 @@ public class PodPlayerController : MonoBehaviour {
             microwaveClassSelected++;
         }
 
+        // Checks the position "on bottom" of the pod and spawns there the selected microwave
         if (microwaveSpawnLocation1.position.y > microwaveSpawnLocation2.position.y)
         {
             Destroy(playerMicrowave2);
@@ -88,6 +113,7 @@ public class PodPlayerController : MonoBehaviour {
             playerMicrowave1.transform.parent = microwaveSpawnLocation1;
         }
 
+        // After having the microwave spawned, turns the platform
         StartCoroutine(TurnPlatform());
     }
 

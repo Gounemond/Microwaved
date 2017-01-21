@@ -1,0 +1,701 @@
+fileFormatVersion: 2
+guid: c7ccb5f13a1679f47be2533d3c48b049
+timeCreated: 1485021853
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: BE_CNG
+    100002: BE_CNG_10
+    100004: BE_CNG_11
+    100006: BE_CNG_12
+    100008: BE_CNG_13
+    100010: BE_CNG_14
+    100012: BE_CNG_15
+    100014: BE_CNG_16
+    100016: BE_CNG_17
+    100018: BE_CNG_18
+    100020: BE_CNG_19
+    100022: BE_CNG_2
+    100024: BE_CNG_20
+    100026: BE_CNG_21
+    100028: BE_CNG_22
+    100030: BE_CNG_23
+    100032: BE_CNG_24
+    100034: BE_CNG_3
+    100036: BE_CNG_4
+    100038: BE_CNG_5
+    100040: BE_CNG_6
+    100042: BE_CNG_7
+    100044: BE_CNG_8
+    100046: BE_CNG_9
+    100048: BN_CNG01
+    100050: BN_CNG01_1
+    100052: BN_CNG01_10
+    100054: BN_CNG01_11
+    100056: BN_CNG01_12
+    100058: BN_CNG01_13
+    100060: BN_CNG01_14
+    100062: BN_CNG01_15
+    100064: BN_CNG01_16
+    100066: BN_CNG01_17
+    100068: BN_CNG01_18
+    100070: BN_CNG01_19
+    100072: BN_CNG01_2
+    100074: BN_CNG01_20
+    100076: BN_CNG01_21
+    100078: BN_CNG01_22
+    100080: BN_CNG01_23
+    100082: BN_CNG01_3
+    100084: BN_CNG01_4
+    100086: BN_CNG01_5
+    100088: BN_CNG01_6
+    100090: BN_CNG01_7
+    100092: BN_CNG01_8
+    100094: BN_CNG01_9
+    100096: BN_ruota01
+    100098: BN_ruota01_1
+    100100: BN_ruota01_2
+    100102: BN_ruota01_3
+    100104: BN_ruota01_4
+    100106: BN_ruota01_5
+    100108: BN_ruota01_6
+    100110: Box004
+    100112: Box005
+    100114: Box006
+    100116: Box007
+    100118: Box008
+    100120: Box009
+    100122: Box010
+    100124: Box011
+    100126: Box012
+    100128: Box013
+    100130: Box014
+    100132: Box015
+    100134: Box016
+    100136: Box018
+    100138: Box018_1
+    100140: Box019
+    100142: Box020
+    100144: Box021
+    100146: Box022
+    100148: Box023
+    100150: Box024
+    100152: Box025
+    100154: Box026
+    100156: Box027
+    100158: cingolo
+    100160: Cylinder021
+    100162: ROOT_BN_cingoliBASE01
+    100164: ROOT_MESH
+    100166: Skin
+    100168: Skin_10
+    100170: Skin_10_2
+    100172: Skin_11
+    100174: Skin_11_2
+    100176: Skin_12
+    100178: Skin_12_2
+    100180: Skin_13
+    100182: Skin_13_2
+    100184: Skin_14
+    100186: Skin_14_2
+    100188: Skin_15
+    100190: Skin_15_2
+    100192: Skin_16
+    100194: Skin_16_2
+    100196: Skin_17
+    100198: Skin_17_2
+    100200: Skin_18
+    100202: Skin_18_2
+    100204: Skin_19
+    100206: Skin_19_2
+    100208: Skin_2
+    100210: Skin_20
+    100212: Skin_20_2
+    100214: Skin_21
+    100216: Skin_21_2
+    100218: Skin_22
+    100220: Skin_22_2
+    100222: Skin_23
+    100224: Skin_23_2
+    100226: Skin_24
+    100228: Skin_24_2
+    100230: Skin_25
+    100232: Skin_25_2
+    100234: Skin_26
+    100236: Skin_26_2
+    100238: Skin_27
+    100240: Skin_2_2
+    100242: Skin_3
+    100244: Skin_3_2
+    100246: Skin_4
+    100248: Skin_4_2
+    100250: Skin_5
+    100252: Skin_5_2
+    100254: Skin_6
+    100256: Skin_6_2
+    100258: Skin_7
+    100260: Skin_7_2
+    100262: Skin_8
+    100264: Skin_8_2
+    100266: Skin_9
+    100268: Skin_9_2
+    100270: //RootNode
+    400000: BE_CNG
+    400002: BE_CNG_10
+    400004: BE_CNG_11
+    400006: BE_CNG_12
+    400008: BE_CNG_13
+    400010: BE_CNG_14
+    400012: BE_CNG_15
+    400014: BE_CNG_16
+    400016: BE_CNG_17
+    400018: BE_CNG_18
+    400020: BE_CNG_19
+    400022: BE_CNG_2
+    400024: BE_CNG_20
+    400026: BE_CNG_21
+    400028: BE_CNG_22
+    400030: BE_CNG_23
+    400032: BE_CNG_24
+    400034: BE_CNG_3
+    400036: BE_CNG_4
+    400038: BE_CNG_5
+    400040: BE_CNG_6
+    400042: BE_CNG_7
+    400044: BE_CNG_8
+    400046: BE_CNG_9
+    400048: BN_CNG01
+    400050: BN_CNG01_1
+    400052: BN_CNG01_10
+    400054: BN_CNG01_11
+    400056: BN_CNG01_12
+    400058: BN_CNG01_13
+    400060: BN_CNG01_14
+    400062: BN_CNG01_15
+    400064: BN_CNG01_16
+    400066: BN_CNG01_17
+    400068: BN_CNG01_18
+    400070: BN_CNG01_19
+    400072: BN_CNG01_2
+    400074: BN_CNG01_20
+    400076: BN_CNG01_21
+    400078: BN_CNG01_22
+    400080: BN_CNG01_23
+    400082: BN_CNG01_3
+    400084: BN_CNG01_4
+    400086: BN_CNG01_5
+    400088: BN_CNG01_6
+    400090: BN_CNG01_7
+    400092: BN_CNG01_8
+    400094: BN_CNG01_9
+    400096: BN_ruota01
+    400098: BN_ruota01_1
+    400100: BN_ruota01_2
+    400102: BN_ruota01_3
+    400104: BN_ruota01_4
+    400106: BN_ruota01_5
+    400108: BN_ruota01_6
+    400110: Box004
+    400112: Box005
+    400114: Box006
+    400116: Box007
+    400118: Box008
+    400120: Box009
+    400122: Box010
+    400124: Box011
+    400126: Box012
+    400128: Box013
+    400130: Box014
+    400132: Box015
+    400134: Box016
+    400136: Box018
+    400138: Box018_1
+    400140: Box019
+    400142: Box020
+    400144: Box021
+    400146: Box022
+    400148: Box023
+    400150: Box024
+    400152: Box025
+    400154: Box026
+    400156: Box027
+    400158: cingolo
+    400160: Cylinder021
+    400162: ROOT_BN_cingoliBASE01
+    400164: ROOT_MESH
+    400166: Skin
+    400168: Skin_10
+    400170: Skin_10_2
+    400172: Skin_11
+    400174: Skin_11_2
+    400176: Skin_12
+    400178: Skin_12_2
+    400180: Skin_13
+    400182: Skin_13_2
+    400184: Skin_14
+    400186: Skin_14_2
+    400188: Skin_15
+    400190: Skin_15_2
+    400192: Skin_16
+    400194: Skin_16_2
+    400196: Skin_17
+    400198: Skin_17_2
+    400200: Skin_18
+    400202: Skin_18_2
+    400204: Skin_19
+    400206: Skin_19_2
+    400208: Skin_2
+    400210: Skin_20
+    400212: Skin_20_2
+    400214: Skin_21
+    400216: Skin_21_2
+    400218: Skin_22
+    400220: Skin_22_2
+    400222: Skin_23
+    400224: Skin_23_2
+    400226: Skin_24
+    400228: Skin_24_2
+    400230: Skin_25
+    400232: Skin_25_2
+    400234: Skin_26
+    400236: Skin_26_2
+    400238: Skin_27
+    400240: Skin_2_2
+    400242: Skin_3
+    400244: Skin_3_2
+    400246: Skin_4
+    400248: Skin_4_2
+    400250: Skin_5
+    400252: Skin_5_2
+    400254: Skin_6
+    400256: Skin_6_2
+    400258: Skin_7
+    400260: Skin_7_2
+    400262: Skin_8
+    400264: Skin_8_2
+    400266: Skin_9
+    400268: Skin_9_2
+    400270: //RootNode
+    4300000: Cylinder021
+    4300002: Box018_1
+    4300004: Box021
+    4300006: Box026
+    4300008: Box025
+    4300010: Box024
+    4300012: Box023
+    4300014: Box022
+    4300016: Box005
+    4300018: Box027
+    4300020: Box004
+    4300022: Box016
+    4300024: cingolo
+    4300026: Box014
+    4300028: Box013
+    4300030: Box012
+    4300032: Box011
+    4300034: Box010
+    4300036: Box009
+    4300038: Box008
+    4300040: Box007
+    4300042: Box006
+    4300044: Box018
+    4300046: Box019
+    4300048: Box020
+    4300050: Box015
+    7400000: movimento
+    9500000: //RootNode
+    13700000: Box004
+    13700002: Box005
+    13700004: Box006
+    13700006: Box007
+    13700008: Box008
+    13700010: Box009
+    13700012: Box010
+    13700014: Box011
+    13700016: Box012
+    13700018: Box013
+    13700020: Box014
+    13700022: Box015
+    13700024: Box016
+    13700026: Box018
+    13700028: Box018_1
+    13700030: Box019
+    13700032: Box020
+    13700034: Box021
+    13700036: Box022
+    13700038: Box023
+    13700040: Box024
+    13700042: Box025
+    13700044: Box026
+    13700046: Box027
+    13700048: cingolo
+    13700050: Cylinder021
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: movimento
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01/BE_CNG
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_1
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_1/BE_CNG_2
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_2
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_2/BE_CNG_3
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_3
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_3/BE_CNG_4
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_4
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_4/BE_CNG_5
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_5
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_5/BE_CNG_6
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_6
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_6/BE_CNG_7
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_7
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_7/BE_CNG_8
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_8
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_8/BE_CNG_9
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_9
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_9/BE_CNG_10
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_10
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_10/BE_CNG_11
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_11
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_11/BE_CNG_12
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_12
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_12/BE_CNG_13
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_13
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_13/BE_CNG_14
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_14
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_14/BE_CNG_15
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_15
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_15/BE_CNG_16
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_16
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_16/BE_CNG_17
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_17
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_17/BE_CNG_18
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_18
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_18/BE_CNG_19
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_19
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_19/BE_CNG_20
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_20
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_20/BE_CNG_21
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_21
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_21/BE_CNG_22
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_22
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_22/BE_CNG_23
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_23
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_CNG01_23/BE_CNG_24
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01_1
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01_2
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01_3
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01_4
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01_5
+        weight: 1
+      - path: ROOT_BN_cingoliBASE01/BN_ruota01_6
+        weight: 1
+      - path: ROOT_MESH
+        weight: 1
+      - path: ROOT_MESH/Box004
+        weight: 1
+      - path: ROOT_MESH/Box004/Skin_11_2
+        weight: 1
+      - path: ROOT_MESH/Box004/Skin_12
+        weight: 1
+      - path: ROOT_MESH/Box005
+        weight: 1
+      - path: ROOT_MESH/Box005/Skin_9_2
+        weight: 1
+      - path: ROOT_MESH/Box005/Skin_10
+        weight: 1
+      - path: ROOT_MESH/Box006
+        weight: 1
+      - path: ROOT_MESH/Box006/Skin_22_2
+        weight: 1
+      - path: ROOT_MESH/Box006/Skin_23
+        weight: 1
+      - path: ROOT_MESH/Box007
+        weight: 1
+      - path: ROOT_MESH/Box007/Skin_21_2
+        weight: 1
+      - path: ROOT_MESH/Box007/Skin_22
+        weight: 1
+      - path: ROOT_MESH/Box008
+        weight: 1
+      - path: ROOT_MESH/Box008/Skin_20_2
+        weight: 1
+      - path: ROOT_MESH/Box008/Skin_21
+        weight: 1
+      - path: ROOT_MESH/Box009
+        weight: 1
+      - path: ROOT_MESH/Box009/Skin_19_2
+        weight: 1
+      - path: ROOT_MESH/Box009/Skin_20
+        weight: 1
+      - path: ROOT_MESH/Box010
+        weight: 1
+      - path: ROOT_MESH/Box010/Skin_18_2
+        weight: 1
+      - path: ROOT_MESH/Box010/Skin_19
+        weight: 1
+      - path: ROOT_MESH/Box011
+        weight: 1
+      - path: ROOT_MESH/Box011/Skin_17_2
+        weight: 1
+      - path: ROOT_MESH/Box011/Skin_18
+        weight: 1
+      - path: ROOT_MESH/Box012
+        weight: 1
+      - path: ROOT_MESH/Box012/Skin_16_2
+        weight: 1
+      - path: ROOT_MESH/Box012/Skin_17
+        weight: 1
+      - path: ROOT_MESH/Box013
+        weight: 1
+      - path: ROOT_MESH/Box013/Skin_15_2
+        weight: 1
+      - path: ROOT_MESH/Box013/Skin_16
+        weight: 1
+      - path: ROOT_MESH/Box014
+        weight: 1
+      - path: ROOT_MESH/Box014/Skin_14_2
+        weight: 1
+      - path: ROOT_MESH/Box014/Skin_15
+        weight: 1
+      - path: ROOT_MESH/Box015
+        weight: 1
+      - path: ROOT_MESH/Box015/Skin_26_2
+        weight: 1
+      - path: ROOT_MESH/Box015/Skin_27
+        weight: 1
+      - path: ROOT_MESH/Box016
+        weight: 1
+      - path: ROOT_MESH/Box016/Skin_12_2
+        weight: 1
+      - path: ROOT_MESH/Box016/Skin_13
+        weight: 1
+      - path: ROOT_MESH/Box018
+        weight: 1
+      - path: ROOT_MESH/Box018/Skin_23_2
+        weight: 1
+      - path: ROOT_MESH/Box018/Skin_24
+        weight: 1
+      - path: ROOT_MESH/Box018_1
+        weight: 1
+      - path: ROOT_MESH/Box018_1/Skin_2_2
+        weight: 1
+      - path: ROOT_MESH/Box018_1/Skin_3
+        weight: 1
+      - path: ROOT_MESH/Box019
+        weight: 1
+      - path: ROOT_MESH/Box019/Skin_24_2
+        weight: 1
+      - path: ROOT_MESH/Box019/Skin_25
+        weight: 1
+      - path: ROOT_MESH/Box020
+        weight: 1
+      - path: ROOT_MESH/Box020/Skin_25_2
+        weight: 1
+      - path: ROOT_MESH/Box020/Skin_26
+        weight: 1
+      - path: ROOT_MESH/Box021
+        weight: 1
+      - path: ROOT_MESH/Box021/Skin_3_2
+        weight: 1
+      - path: ROOT_MESH/Box021/Skin_4
+        weight: 1
+      - path: ROOT_MESH/Box022
+        weight: 1
+      - path: ROOT_MESH/Box022/Skin_8_2
+        weight: 1
+      - path: ROOT_MESH/Box022/Skin_9
+        weight: 1
+      - path: ROOT_MESH/Box023
+        weight: 1
+      - path: ROOT_MESH/Box023/Skin_7_2
+        weight: 1
+      - path: ROOT_MESH/Box023/Skin_8
+        weight: 1
+      - path: ROOT_MESH/Box024
+        weight: 1
+      - path: ROOT_MESH/Box024/Skin_6_2
+        weight: 1
+      - path: ROOT_MESH/Box024/Skin_7
+        weight: 1
+      - path: ROOT_MESH/Box025
+        weight: 1
+      - path: ROOT_MESH/Box025/Skin_5_2
+        weight: 1
+      - path: ROOT_MESH/Box025/Skin_6
+        weight: 1
+      - path: ROOT_MESH/Box026
+        weight: 1
+      - path: ROOT_MESH/Box026/Skin_4_2
+        weight: 1
+      - path: ROOT_MESH/Box026/Skin_5
+        weight: 1
+      - path: ROOT_MESH/Box027
+        weight: 1
+      - path: ROOT_MESH/Box027/Skin_10_2
+        weight: 1
+      - path: ROOT_MESH/Box027/Skin_11
+        weight: 1
+      - path: ROOT_MESH/cingolo
+        weight: 1
+      - path: ROOT_MESH/cingolo/Skin_13_2
+        weight: 1
+      - path: ROOT_MESH/cingolo/Skin_14
+        weight: 1
+      - path: ROOT_MESH/Cylinder021
+        weight: 1
+      - path: ROOT_MESH/Cylinder021/Skin
+        weight: 1
+      - path: ROOT_MESH/Cylinder021/Skin_2
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
