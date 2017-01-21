@@ -16,7 +16,7 @@ public class Banana : Weapon
     // Update is called once per frame
     void Update ()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
         transform.Rotate(transform.up, rotationValue * Time.deltaTime);
         visualEffect.Rotate(visualEffect.up, rotationSpeed * Time.deltaTime);
         
@@ -37,7 +37,8 @@ public class Banana : Weapon
             audioSource.Play();
             anim.SetTrigger("Hit");
             Destroy(gameObject, 5f);
-            //TODO danno diretto
+            if (other.tag == ("Player"))
+                playerHit(other);
         }
     }
 }

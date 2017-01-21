@@ -4,20 +4,33 @@ using UnityEngine;
 
 public class PopCorn : Weapon
 {
-    
+    [SerializeField]
+    protected float burstTime;
+    [SerializeField]
+    protected int numberOfPops;
+
+    public GameObject Pop;
+
+    private int currentPop;
+
+    private int playerId;
+
+    IEnumerator burst()
+    {
+        GameObject pop = Instantiate(Pop, transform.position, transform.rotation);
+        pop.GetComponent<PopCornPop>().SetParameters(damage, speed, knockbackForce);
+        pop.GetComponent<PopCornPop>().SetPlayerId(playerId);
+        yield return new WaitForSeconds(burstTime / numberOfPops);
+        currentPop++;
+        if (currentPop < numberOfPops)
+            StartCoroutine(burst());
+    }
+
+
     protected override void fire()
     {
-        ParticleSystem p = GetComponentInChildren<ParticleSystem>();
-        p.Play();
+        StartCoroutine(burst());
         Destroy(gameObject, 5f);
     }
-    private void OnParticleCollision(GameObject other)
-    {
-        if(other.tag == "Player")
-        {
-            //TODO danno al giocatore
-        }
-        audioSource.clip = HitAudio;
-        audioSource.Play();
-    }
+
 }

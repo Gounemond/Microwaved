@@ -30,6 +30,7 @@ public class Dildo : Weapon
             audioSource.Play();
             anim.SetTrigger("Hit");
             Destroy(gameObject, 5f);
+            playerHit(other);
         }
 
         if (other.tag == ("Wall"))

@@ -22,7 +22,7 @@ public class Egg : Weapon
     {
         if (speed > 0)
         {
-            transform.Translate(direction * speed * Time.deltaTime);
+            transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
             speed -= deceleration * Time.deltaTime;
         }
         else
@@ -55,7 +55,7 @@ public class Egg : Weapon
             audioSource.Play();
             anim.SetTrigger("Hit");
             Destroy(gameObject, 5f);
-            //TODO danno diretto
+            playerHit(other);
         }
         if (other.tag == ("Wall"))
         {

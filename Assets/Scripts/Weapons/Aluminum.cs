@@ -7,11 +7,12 @@ public class Aluminum : Weapon
     [SerializeField]
     private float explosionRadius;
     [SerializeField]
-    private float explosionDamage;
+    private int explosionDamage;
+    [SerializeField]
+    private float explosionKnockBack;
     [SerializeField]
     private float rollSpeed;
 
-    public GameObject TestSphere;
 
     private Transform visualEffect;
 
@@ -19,7 +20,7 @@ public class Aluminum : Weapon
     // Update is called once per frame
     void Update ()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(transform.forward * speed * Time.deltaTime, Space.World);
         roll();
 	}
 
@@ -39,11 +40,16 @@ public class Aluminum : Weapon
     void explode()
     {
         speed = 0;
-        Instantiate(TestSphere, transform.position, Quaternion.identity, transform);
         Collider[] hits = Physics.OverlapSphere(transform.position, explosionRadius);
         anim.SetTrigger("Hit");
         Destroy(gameObject, 5f);
-        //TODO Danneggia i giocatori
+        foreach(Collider c in hits)
+        {
+            if(c.tag== "Player")
+            {
+                playerHit(c,explosionDamage, explosionKnockBack);
+            }
+        }
 
     }
 
@@ -54,7 +60,8 @@ public class Aluminum : Weapon
             explode();
             audioSource.clip = HitAudio;
             audioSource.Play();
-            //TODO danno diretto
+            if(other.tag == "Player")
+                playerHit(other);
         }
     }
 }

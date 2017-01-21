@@ -8,7 +8,7 @@ public class Tomato : Weapon
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(direction * speed * Time.deltaTime);
+        transform.Translate(transform.forward * speed * Time.deltaTime,Space.World);
     }
 
     protected override void fire()
@@ -24,7 +24,7 @@ public class Tomato : Weapon
         {
             audioSource.clip = HitAudio;
             audioSource.Play();
-            //TODO danno diretto
+            playerHit(other);
         }
         if (other.tag == ("Wall"))
         {
