@@ -79,8 +79,9 @@ public class PlayerWeaponHandler : MonoBehaviour
         {
             if (c.tag == "Player" && c != ownCollider)
             {
-                Vector3 hitDirection = (c.transform.position - transform.position);
-                hitDirection.Normalize();
+                Vector3 hitDirection = transform.forward;
+                /*Vector3 hitDirection = (c.transform.position - transform.position);
+                hitDirection.Normalize();*/
                 c.transform.parent.parent.GetComponent<PlayerHitController>().HitYou(1, hitDirection * knockbackForce, _player.id);
                 Debug.Log(hitDirection * knockbackForce);
             }
