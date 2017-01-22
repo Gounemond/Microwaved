@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -559,7 +559,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
       propertyPath: m_LocalScale.x
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
       propertyPath: m_LocalScale.y
@@ -567,7 +567,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
       propertyPath: m_LocalScale.z
-      value: 200
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 23125110829555784, guid: 80d8cb17df3c72249bc8af23a5dc5ef9,
         type: 2}
@@ -1719,6 +1719,75 @@ Transform:
   m_Father: {fileID: 699405548}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1322365454
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 128.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4152060605126700, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 23125110829555784, guid: 80d8cb17df3c72249bc8af23a5dc5ef9,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1556573342255968, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+      propertyPath: m_Name
+      value: DeathZone (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 65155367872297672, guid: 80d8cb17df3c72249bc8af23a5dc5ef9,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114653267163446836, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 80d8cb17df3c72249bc8af23a5dc5ef9, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1513625356
 GameObject:
   m_ObjectHideFlags: 0
