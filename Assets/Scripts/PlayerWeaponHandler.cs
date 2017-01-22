@@ -42,10 +42,23 @@ public class PlayerWeaponHandler : MonoBehaviour
         ownCollider = ObjectWithOwnCollider.GetComponent<Collider>();
 	}
 
-    private void Start()
+    void Start()
     {
         _player = ReInput.players.GetPlayer(GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId);
     }
+	
+	// Update is called once per frame
+	void Update ()
+    {
+        if (_player.GetButton("Attacking") && canHatch)
+        {
+            openHatch();
+        }
+        if (_player.GetButton("Cooking") && currentWeaponIndex != -1)
+            cook();
+        if (!canHatch)
+            hatchIsOpen();
+	}
 
     void cook ()
     {
