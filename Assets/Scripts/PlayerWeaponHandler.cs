@@ -33,10 +33,14 @@ public class PlayerWeaponHandler : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if (_player.GetButtonDown("Attacking") && canHatch)
+        if (_player.GetButton("Attacking") && canHatch)
+        {
             openHatch();
+        }
         if (_player.GetButton("Cooking") && currentWeaponIndex != -1)
             cook();
+        if (!canHatch)
+            hatchIsOpen();
 	}
 
     void cook ()
@@ -51,23 +55,10 @@ public class PlayerWeaponHandler : MonoBehaviour
 
     void openHatch()
     {
-        if(currentWeaponIndex == -1)
-        {
-            //TODO sportellata normale
-            Collider[] col = Physics.OverlapBox(weaponShootSpawn.position, new Vector3(1,1,1));
-            foreach(Collider c in col)
-            {
-                if (c.tag == "PickUp")
-                {
-                    currentWeaponIndex = c.gameObject.GetComponent<PickUp>().Pick();
-                }
-                if (c.tag == "Player" && c.gameObject != gameObject)
-                {
-
-                }
-            }
-        }
-        else
+        StartCoroutine(resetHatch());
+        hatchIsOpen();
+        canHatch = false;
+        if(currentWeaponIndex != -1)
         {
             if (cooked)
             {
@@ -89,9 +80,35 @@ public class PlayerWeaponHandler : MonoBehaviour
         //currentWeaponIndex = (currentWeaponIndex + 1) % 6;
     }
 
+    void hatchIsOpen()
+    {
+        if (currentWeaponIndex == -1)
+        {
+            //TODO sportellata normale
+            Collider[] col = Physics.OverlapBox(weaponShootSpawn.position, new Vector3(1, 1, 2));
+            foreach (Collider c in col)
+            {
+                if (c.tag == "PickUp")
+                {
+                    currentWeaponIndex = c.gameObject.GetComponent<PickUp>().Pick();
+                }
+                if (c.tag == "Player" && c.gameObject != gameObject)
+                {
+
+                }
+            }
+        }
+    }
+
     void removeWeapon ()
     {
         currentWeaponIndex = -1;
         cooked = false;
+    }
+
+    IEnumerator resetHatch()
+    {
+        yield return new WaitForSeconds(2);
+        canHatch = true;
     }
 }

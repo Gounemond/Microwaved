@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65526901286795366}
   - component: {fileID: 23284877317570046}
   - component: {fileID: 114114865487378148}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PickUpPopCorn
   m_TagString: PickUp
   m_Icon: {fileID: 0}

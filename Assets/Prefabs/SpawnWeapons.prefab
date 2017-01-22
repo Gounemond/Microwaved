@@ -221,7 +221,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1453974561681860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.08, y: 16.38, z: 16.55}
+  m_LocalPosition: {x: 7.08, y: 0.5, z: 16.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4384267631395536}
@@ -312,9 +312,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337bdea06781c324d87af2796688e061, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartingItems: 6
-  MaxTime: 1
-  MinTime: 4
+  StartingItems: 2
+  MaxTime: 9
+  MinTime: 1
   PickUps:
   - {fileID: 1283099298301160, guid: ff08fb67e0aadcd45822e751aaa561fa, type: 2}
   - {fileID: 1606912667718588, guid: 4b23236c766e0b84eb2e01c1dcec6292, type: 2}

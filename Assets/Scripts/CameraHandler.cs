@@ -80,14 +80,14 @@ public class CameraHandler : MonoBehaviour
         //Debug.Log("MaxXY:  " + maxXY + "   MinXY:   " + minXY + "  MaxYZ:  " + maxYZ + "  MinYZ:   " + minYZ);
 
         //precedenza all'allontanamento
-        if (maxXY > 130 || minXY < 50 || maxYZ > 70 || minYZ < 45) //Danger zone
+        if (maxXY > 145 || minXY < 35 || maxYZ > 80 || minYZ < 35) //Danger zone
         {
-            if (maxXY > 138 || minXY < 42)
+            if (maxXY > 147 || minXY < 33)
             {
                 transform.position = Vector3.SmoothDamp(transform.position, transform.position - transform.forward * 3, ref planeVelocity, planeSmooth);
             }
 
-            if (maxYZ > 78 || minYZ < 43)
+            if (maxYZ > 83 || minYZ < 33)
             {
                 transform.position = Vector3.SmoothDamp(transform.position, transform.position - transform.forward * 3, ref planeVelocity, planeSmooth);
             }

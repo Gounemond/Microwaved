@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 65870256559509668}
   - component: {fileID: 23953920131381758}
   - component: {fileID: 114616189184397540}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PickUpDildo
   m_TagString: PickUp
   m_Icon: {fileID: 0}

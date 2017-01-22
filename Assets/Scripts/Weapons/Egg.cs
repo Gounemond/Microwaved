@@ -9,8 +9,6 @@ public class Egg : Weapon
     [SerializeField]
     private float deceleration;
 
-    public GameObject TestSphere;
-
     private Transform visualEffect;
 
     private Collider oldCollider;
@@ -40,7 +38,6 @@ public class Egg : Weapon
     void explode()
     {
         speed = 0;
-        Instantiate(TestSphere, transform.position, Quaternion.identity, transform);
         Collider[] hits = Physics.OverlapSphere(transform.position, explosionRadius);
         //TODO Danneggia i giocatori
 

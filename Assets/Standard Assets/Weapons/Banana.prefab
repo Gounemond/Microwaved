@@ -242,7 +242,7 @@ MonoBehaviour:
   speed: 40
   knockbackForce: 80000
   damage: 40
-  rotationValue: 50
+  rotationValue: 80
   rotationSpeed: 360
 --- !u!135 &135845845633141668
 SphereCollider:
