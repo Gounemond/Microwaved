@@ -35,25 +35,17 @@ public class PlayerWeaponHandler : MonoBehaviour
 	// Use this for initialization
 	void Awake ()
     {
-        _player = ReInput.players.GetPlayer(GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId);
+
         weaponShootSpawn = transform.FindChild("WeaponShootSpawn");
         currentWeaponIndex = -1;
         anim = BoneWithHatchAnimator.GetComponent<Animator>();
         ownCollider = ObjectWithOwnCollider.GetComponent<Collider>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    private void Start()
     {
-        if (_player.GetButton("Attacking") && canHatch)
-        {
-            openHatch();
-        }
-        if (_player.GetButton("Cooking") && currentWeaponIndex != -1)
-            cook();
-        if (!canHatch)
-            hatchIsOpen();
-	}
+        _player = ReInput.players.GetPlayer(GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId);
+    }
 
     void cook ()
     {
