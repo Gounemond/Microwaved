@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114693987108920358}
   - component: {fileID: 114073645059116850}
   - component: {fileID: 114468341851837522}
+  - component: {fileID: 122859484514157700}
   m_Layer: 0
   m_Name: PlayerChef
   m_TagString: GameController
@@ -4006,6 +4007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c942f3c028eb51541aa945d49a7a94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 1819001549790884, guid: 52ca8deeed4a0004e93f70efc4162e71, type: 2}
   hp: 100
 --- !u!114 &114492997805984506
 MonoBehaviour:
@@ -4120,6 +4122,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheel: {fileID: 1436886573607404}
+--- !u!122 &122859484514157700
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002414577730164}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278518015
+  m_Size: 7
 --- !u!137 &137229183362872030
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

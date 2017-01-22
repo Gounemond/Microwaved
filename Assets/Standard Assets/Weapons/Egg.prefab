@@ -242,6 +242,7 @@ MonoBehaviour:
   speed: 75
   knockbackForce: 250000
   damage: 5
+  Explosion: {fileID: 1819001549790884, guid: 52ca8deeed4a0004e93f70efc4162e71, type: 2}
   explosionRadius: 50
   deceleration: 22
 --- !u!135 &135262382213711992

@@ -5166,6 +5166,7 @@ GameObject:
   - component: {fileID: 114416670107765534}
   - component: {fileID: 114228646980133148}
   - component: {fileID: 114896867868501864}
+  - component: {fileID: 122744232607675672}
   m_Layer: 0
   m_Name: PlayerTank
   m_TagString: GameController
@@ -11221,6 +11222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c942f3c028eb51541aa945d49a7a94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 1819001549790884, guid: 52ca8deeed4a0004e93f70efc4162e71, type: 2}
   hp: 100
 --- !u!114 &114925394225025990
 MonoBehaviour:
@@ -11245,6 +11247,17 @@ MonoBehaviour:
   maxRolloffDistance: 500
   dopplerLevel: 1
   useDoppler: 1
+--- !u!122 &122744232607675672
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1999525903355634}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278518015
+  m_Size: 7
 --- !u!137 &137002408695058666
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

@@ -1038,6 +1038,7 @@ GameObject:
   - component: {fileID: 114163254795267320}
   - component: {fileID: 114861648585649772}
   - component: {fileID: 114846992991188240}
+  - component: {fileID: 122719077028782836}
   m_Layer: 0
   m_Name: PlayerHotRod
   m_TagString: GameController
@@ -3670,6 +3671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c942f3c028eb51541aa945d49a7a94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 1819001549790884, guid: 52ca8deeed4a0004e93f70efc4162e71, type: 2}
   hp: 100
 --- !u!114 &114861648585649772
 MonoBehaviour:
@@ -3694,6 +3696,17 @@ MonoBehaviour:
   cookLevel: 2
   cookSpeed: 1
   knockbackForce: 60000
+--- !u!122 &122719077028782836
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895189546939390}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278518015
+  m_Size: 7
 --- !u!137 &137002179320752442
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

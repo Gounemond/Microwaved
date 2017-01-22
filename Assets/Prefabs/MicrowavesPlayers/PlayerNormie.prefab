@@ -88,6 +88,7 @@ GameObject:
   - component: {fileID: 114872448689019456}
   - component: {fileID: 114773820874561134}
   - component: {fileID: 114044069879620602}
+  - component: {fileID: 122613089615611168}
   m_Layer: 0
   m_Name: PlayerNormie
   m_TagString: GameController
@@ -4070,6 +4071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c942f3c028eb51541aa945d49a7a94ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Explosion: {fileID: 1819001549790884, guid: 52ca8deeed4a0004e93f70efc4162e71, type: 2}
   hp: 100
 --- !u!114 &114051921950277046
 MonoBehaviour:
@@ -4325,6 +4327,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheel: {fileID: 1700551213109116}
+--- !u!122 &122613089615611168
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022481046664294}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278518015
+  m_Size: 7
 --- !u!137 &137058473571377756
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
