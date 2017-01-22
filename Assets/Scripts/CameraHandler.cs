@@ -49,7 +49,7 @@ public class CameraHandler : MonoBehaviour
         //move on the plane
         Vector3 dir = new Vector3(0, Mathf.Sin(angle), Mathf.Cos(angle));
         Physics.Raycast(new Ray(new Vector3(x, y, z), dir), out info, Mathf.Infinity, layerMask);
-        Debug.DrawLine(new Vector3(x, y, z), info.point, Color.red);
+        //Debug.DrawLine(new Vector3(x, y, z), info.point, Color.red);
         //Debug.DrawRay(new Vector3(x, y, z), dir, Color.red, 30);
         transform.position = Vector3.SmoothDamp(transform.position, info.point, ref currentVelocity, smooth);
 
@@ -77,7 +77,7 @@ public class CameraHandler : MonoBehaviour
         maxYZ *= Mathf.Rad2Deg;
         minXY *= Mathf.Rad2Deg;
         minYZ *= Mathf.Rad2Deg;
-        Debug.Log("MaxXY:  " + maxXY + "   MinXY:   " + minXY + "  MaxYZ:  " + maxYZ + "  MinYZ:   " + minYZ);
+        //Debug.Log("MaxXY:  " + maxXY + "   MinXY:   " + minXY + "  MaxYZ:  " + maxYZ + "  MinYZ:   " + minYZ);
 
         //precedenza all'allontanamento
         if (maxXY > 130 || minXY < 50 || maxYZ > 70 || minYZ < 45) //Danger zone
