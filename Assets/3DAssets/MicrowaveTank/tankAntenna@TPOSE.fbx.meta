@@ -1,30 +1,41 @@
 fileFormatVersion: 2
-guid: 36902601a52ea9d42baeda72805c5ddc
-timeCreated: 1485011219
+guid: f95cf4b8f9a5de34fa54062f53e01c6f
+timeCreated: 1485030008
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: antina
-    100002: be_sportello01
-    100004: ROOT_BONES
-    100006: ROOT_MESH
-    100008: ROOT_RIG
-    100010: ROOT_sportello01
-    100012: Skin
-    100014: //RootNode
-    400000: antina
-    400002: be_sportello01
-    400004: ROOT_BONES
-    400006: ROOT_MESH
-    400008: ROOT_RIG
-    400010: ROOT_sportello01
-    400012: Skin
-    400014: //RootNode
-    4300000: antina
+    100000: antenna
+    100002: bn_antenna01
+    100004: bn_antenna01_1
+    100006: bn_antenna01_2
+    100008: bn_antenna01_3
+    100010: bn_antenna01_4
+    100012: bn_antenna01_5
+    100014: Null_0
+    100016: Null_1
+    100018: ROOT_antenna
+    100020: ROOT_MESH
+    100022: Skin
+    100024: Spline
+    100026: //RootNode
+    400000: antenna
+    400002: bn_antenna01
+    400004: bn_antenna01_1
+    400006: bn_antenna01_2
+    400008: bn_antenna01_3
+    400010: bn_antenna01_4
+    400012: bn_antenna01_5
+    400014: Null_0
+    400016: Null_1
+    400018: ROOT_antenna
+    400020: ROOT_MESH
+    400022: Skin
+    400024: Spline
+    400026: //RootNode
+    4300000: antenna
     9500000: //RootNode
-    11100000: //RootNode
-    13700000: antina
+    13700000: antenna
   materials:
     importMaterials: 1
     materialName: 0
@@ -49,7 +60,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 3
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -84,10 +95,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 1
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
