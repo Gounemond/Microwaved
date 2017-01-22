@@ -2282,7 +2282,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1235262509671346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.48, z: 0}
+  m_LocalPosition: {x: 0, y: 0.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4805976838233280}
@@ -2572,7 +2572,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1584854629231866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5059, z: -0.15658}
+  m_LocalPosition: {x: 0, y: 0.5059, z: -0.41}
   m_LocalScale: {x: 2.43, y: 0.41, z: 4.47}
   m_Children: []
   m_Father: {fileID: 4805976838233280}
@@ -3354,7 +3354,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1, z: 0.75}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65544609852981450
 BoxCollider:
@@ -3366,7 +3366,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 3, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65896339452609564
 BoxCollider:
@@ -3378,7 +3378,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3086431, y: 1, z: 3.8881145}
+  m_Size: {x: 3.5, y: 2, z: 4}
   m_Center: {x: -0.018196195, y: 0, z: -0.18795681}
 --- !u!82 &82109850525052616
 AudioSource:
@@ -3447,7 +3447,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3527,7 +3527,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -3760,7 +3760,7 @@ Animator:
   m_GameObject: {fileID: 1180988335988286}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a8627020044326d469aacaad3e4b5bce, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6448082a7e2eb754198cb815b6bf2a55, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3777,7 +3777,7 @@ Animator:
   m_GameObject: {fileID: 1604266631645716}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d1d7ef99f003eb34faa505e4262f58a3, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d2ddab1721516a4c824cee037bc0362, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

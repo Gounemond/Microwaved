@@ -57,7 +57,7 @@ ModelImporter:
     400048: Skin_3
     4300000: DOOR
     4300002: antina
-    7400000: C4D Animation Take
+    7400000: run
     9500000: //RootNode
     13700000: antina
     13700002: DOOR
@@ -81,7 +81,85 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: run
+      takeName: C4D Animation Take
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ROOT_mesh
+        weight: 1
+      - path: ROOT_mesh/antina
+        weight: 1
+      - path: ROOT_mesh/antina/Skin_2_2
+        weight: 1
+      - path: ROOT_mesh/antina/Skin_3
+        weight: 1
+      - path: ROOT_mesh/DOOR
+        weight: 1
+      - path: ROOT_mesh/DOOR/Skin
+        weight: 1
+      - path: ROOT_mesh/DOOR/Skin_2
+        weight: 1
+      - path: ROOT_sportello
+        weight: 1
+      - path: ROOT_sportello/be_sportello01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_l_A01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_l_A01/bn_baffocentro_l_B01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_l_A01/bn_baffocentro_l_B01/bn_baffocentro_l_C01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_l_A01/bn_baffocentro_l_B01/bn_baffocentro_l_C01/bn_baffocentro_l_D01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_l_A01/bn_baffocentro_l_B01/bn_baffocentro_l_C01/bn_baffocentro_l_D01/bn_baffocentro_l_E01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_l_A01/bn_baffocentro_l_B01/bn_baffocentro_l_C01/bn_baffocentro_l_D01/bn_baffocentro_l_E01/be_baffocentro_l_END
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_r_A01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_r_A01/bn_baffocentro_r_B01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_r_A01/bn_baffocentro_r_B01/bn_baffocentro_r_C01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_r_A01/bn_baffocentro_r_B01/bn_baffocentro_r_C01/bn_baffocentro_r_D01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_r_A01/bn_baffocentro_r_B01/bn_baffocentro_r_C01/bn_baffocentro_r_D01/bn_baffocentro_r_E01
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro/bn_baffocentro_r_A01/bn_baffocentro_r_B01/bn_baffocentro_r_C01/bn_baffocentro_r_D01/bn_baffocentro_r_E01/be_baffocentro_r_END
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro_6_Goal
+        weight: 1
+      - path: ROOT_sportello/bn_baffocentro_6_Goal_2
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
