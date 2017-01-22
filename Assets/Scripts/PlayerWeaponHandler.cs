@@ -9,6 +9,9 @@ public class PlayerWeaponHandler : MonoBehaviour
     public GameObject[] Weapons;
     public GameObject BoneWithHatchAnimator;
     public GameObject ObjectWithOwnCollider;
+    public AudioClip CookingInProgress;
+    public AudioClip CookingDone;
+    public AudioClip HatchOpenSound;
 
     [SerializeField]
     private float cookLevel;
@@ -32,6 +35,8 @@ public class PlayerWeaponHandler : MonoBehaviour
 
     private float currentCookLevel;
 
+    private AudioSource audSource;
+
 	// Use this for initialization
 	void Awake ()
     {
@@ -40,6 +45,7 @@ public class PlayerWeaponHandler : MonoBehaviour
         currentWeaponIndex = -1;
         anim = BoneWithHatchAnimator.GetComponent<Animator>();
         ownCollider = ObjectWithOwnCollider.GetComponent<Collider>();
+        audSource = GetComponent<AudioSource>();
 	}
 
     void Start()
@@ -56,6 +62,8 @@ public class PlayerWeaponHandler : MonoBehaviour
         }
         if (_player.GetButton("Cooking") && currentWeaponIndex != -1)
             cook();
+        else
+            audSource.Stop();
         if (!canHatch)
             hatchIsOpen();
 	}
@@ -65,13 +73,25 @@ public class PlayerWeaponHandler : MonoBehaviour
         if (!cooked)
         {
             currentCookLevel += cookSpeed * Time.deltaTime;
+            audSource.clip = CookingInProgress;
+            audSource.loop = true;
+            audSource.Play();
             if (currentCookLevel > cookLevel)
+            {
                 cooked = true;
+                audSource.clip = CookingDone;
+                audSource.loop = false;
+                audSource.Play();
+            }
+
         }
     }
 
     void openHatch()
     {
+        audSource.loop = false;
+        audSource.clip = HatchOpenSound;
+        audSource.Play();
         StartCoroutine(resetHatch());
         hatchIsOpen();
         Collider[] col = Physics.OverlapBox(weaponShootSpawn.position, new Vector3(1, 1, 2));
