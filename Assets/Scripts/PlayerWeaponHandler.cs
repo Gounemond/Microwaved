@@ -160,7 +160,7 @@ public class PlayerWeaponHandler : MonoBehaviour
     IEnumerator resetHatch()
     {
         anim.SetBool("Open", true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.5f);
         anim.SetBool("Open", false);
         canHatch = true;
     }
