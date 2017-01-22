@@ -52,8 +52,8 @@ public class WeaponSpawner : MonoBehaviour
                 }
             }
             count++;
-        } while (exit == false || count < 300);
-        if(exit)
+        } while (exit == false || count < 30);
+        if(exit && count < 30)
             Instantiate(PickUps[Random.Range(0, PickUps.Length)], pos, Quaternion.identity);
         currentTime = 0;
     }
