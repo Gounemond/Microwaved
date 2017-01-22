@@ -1,25 +1,31 @@
 fileFormatVersion: 2
-guid: ec579880ba69b9a4f9cd80ed5f546d8b
-timeCreated: 1485043856
+guid: 069ad8cc8b00835489241e43ab597042
+timeCreated: 1485043855
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: be_sportelloEND01
-    100002: bn_sportelloA01
-    100004: DOOR
+    100000: bn_perno
+    100002: bn_ruota
+    100004: MASTER_MESH
     100006: //RootNode
-    100008: ROOT_MESH
+    100008: Object002
     100010: Skin
-    400000: be_sportelloEND01
-    400002: bn_sportelloA01
-    400004: DOOR
+    100012: Skin_2
+    100014: wheel_R_rear
+    400000: bn_perno
+    400002: bn_ruota
+    400004: MASTER_MESH
     400006: //RootNode
-    400008: ROOT_MESH
+    400008: Object002
     400010: Skin
-    4300000: DOOR
+    400012: Skin_2
+    400014: wheel_R_rear
+    4300000: wheel_R_rear
+    4300002: Object002
     9500000: //RootNode
-    13700000: DOOR
+    13700000: Object002
+    13700002: wheel_R_rear
   materials:
     importMaterials: 1
     materialName: 0
@@ -60,8 +66,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0

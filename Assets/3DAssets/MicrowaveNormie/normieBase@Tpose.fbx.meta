@@ -1,31 +1,41 @@
 fileFormatVersion: 2
-guid: 069ad8cc8b00835489241e43ab597042
+guid: 18b05cf8e8da3f94fb547566f354ae7c
 timeCreated: 1485043855
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: bn_perno
-    100002: bn_ruota
-    100004: MASTER_MESH
-    100006: //RootNode
-    100008: Object002
-    100010: Skin
-    100012: Skin_2
-    100014: wheel_R_rear
-    400000: bn_perno
-    400002: bn_ruota
-    400004: MASTER_MESH
-    400006: //RootNode
-    400008: Object002
-    400010: Skin
-    400012: Skin_2
-    400014: wheel_R_rear
-    4300000: wheel_R_rear
-    4300002: Object002
+    100000: BASE
+    100002: bn_centerBody
+    100004: bn_centrorimbalzo
+    100006: bn_Root
+    100008: GANCIO_antenna
+    100010: GANCIO_RUOTA_AVANTI_DESTRA01
+    100012: GANCIO_RUOTA_AVANTI_SINISTRA01
+    100014: GANCIO_RUOTA_DIETRO_DESTRA01
+    100016: GANCIO_RUOTA_DIETRO_SINISTRA01
+    100018: GANCIO_sportello
+    100020: //RootNode
+    100022: ROOT_BONES
+    100024: ROOT_MESH
+    100026: Skin
+    400000: BASE
+    400002: bn_centerBody
+    400004: bn_centrorimbalzo
+    400006: bn_Root
+    400008: GANCIO_antenna
+    400010: GANCIO_RUOTA_AVANTI_DESTRA01
+    400012: GANCIO_RUOTA_AVANTI_SINISTRA01
+    400014: GANCIO_RUOTA_DIETRO_DESTRA01
+    400016: GANCIO_RUOTA_DIETRO_SINISTRA01
+    400018: GANCIO_sportello
+    400020: //RootNode
+    400022: ROOT_BONES
+    400024: ROOT_MESH
+    400026: Skin
+    4300000: BASE
     9500000: //RootNode
-    13700000: Object002
-    13700002: wheel_R_rear
+    13700000: BASE
   materials:
     importMaterials: 1
     materialName: 0
@@ -66,8 +76,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
