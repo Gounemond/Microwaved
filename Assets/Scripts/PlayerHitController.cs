@@ -46,12 +46,14 @@ public class PlayerHitController : MonoBehaviour
 
     IEnumerator respawn()
     {
+        rigid.isKinematic = true;
         int rnd = Random.Range(0, 4);
-        /*transform.position = BattleArenaElements.instance.spawnPositionUnderground[rnd].position;
-        yield return new WaitForSeconds(2f);*/
+        /*transform.position = BattleArenaElements.instance.spawnPositionUnderground[rnd].position;*/
+        yield return new WaitForSeconds(0.1f);
+        rigid.isKinematic = false;
         transform.position = BattleArenaElements.instance.spawnPosition[rnd].position;
+        transform.rotation = Quaternion.identity;
         hp = 100;
-        rigid.velocity = Vector3.zero;
         yield return 0;
     }
 }
