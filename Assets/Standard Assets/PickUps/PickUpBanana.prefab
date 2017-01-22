@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65238037209684002}
   - component: {fileID: 23191794114892428}
   - component: {fileID: 114114622107207476}
+  - component: {fileID: 122916590313531956}
   m_Layer: 2
   m_Name: PickUpBanana
   m_TagString: PickUp
@@ -105,3 +106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponIndex: 1
+--- !u!122 &122916590313531956
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1606912667718588}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278253823
+  m_Size: 5

@@ -9,47 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1247588434362882}
+  m_RootGameObject: {fileID: 1556573342255968}
   m_IsPrefabParent: 1
---- !u!1 &1247588434362882
+--- !u!1 &1556573342255968
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4747237720740680}
-  - component: {fileID: 33448521821757176}
-  - component: {fileID: 65526901286795366}
-  - component: {fileID: 23284877317570046}
-  - component: {fileID: 114114865487378148}
-  - component: {fileID: 122925755288825618}
-  m_Layer: 2
-  m_Name: PickUpPopCorn
-  m_TagString: PickUp
+  - component: {fileID: 4152060605126700}
+  - component: {fileID: 33939665599248844}
+  - component: {fileID: 65155367872297672}
+  - component: {fileID: 23125110829555784}
+  - component: {fileID: 114653267163446836}
+  m_Layer: 0
+  m_Name: DeathZone
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4747237720740680
+--- !u!4 &4152060605126700
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1247588434362882}
+  m_GameObject: {fileID: 1556573342255968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.8118863, y: -1.5169086, z: -0.90538216}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23284877317570046
+--- !u!23 &23125110829555784
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1247588434362882}
+  m_GameObject: {fileID: 1556573342255968}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -57,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 2a4912e6f8dc0c14d8c679a48b0e2ea8, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75,45 +74,33 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
---- !u!33 &33448521821757176
+--- !u!33 &33939665599248844
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1247588434362882}
-  m_Mesh: {fileID: 4300000, guid: 5103de2623fa55146b4208418342dff5, type: 3}
---- !u!65 &65526901286795366
+  m_GameObject: {fileID: 1556573342255968}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65155367872297672
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1247588434362882}
+  m_GameObject: {fileID: 1556573342255968}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114114865487378148
+--- !u!114 &114653267163446836
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1247588434362882}
+  m_GameObject: {fileID: 1556573342255968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 788931c1977dc8947835fa6ab302b5b9, type: 3}
+  m_Script: {fileID: 11500000, guid: cfc75002542fb0347b810187eba576f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WeaponIndex: 4
---- !u!122 &122925755288825618
-Halo:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1247588434362882}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278253823
-  m_Size: 5

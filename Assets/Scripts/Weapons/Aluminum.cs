@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Aluminum : Weapon
 {
+    public GameObject Explosion;
     [SerializeField]
     private float explosionRadius;
     [SerializeField]
@@ -39,10 +40,11 @@ public class Aluminum : Weapon
 
     void explode()
     {
+        Instantiate(Explosion, transform.position, Quaternion.identity);
         speed = 0;
         Collider[] hits = Physics.OverlapSphere(transform.position, explosionRadius);
         anim.SetTrigger("Hit");
-        Destroy(gameObject, 5f);
+        //Destroy(gameObject, 5f);
         foreach(Collider c in hits)
         {
             if(c.tag== "Player")
@@ -50,6 +52,7 @@ public class Aluminum : Weapon
                 playerHit(c,explosionDamage, explosionKnockBack);
             }
         }
+        Destroy(gameObject);
 
     }
 

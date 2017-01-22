@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 65208405723901532}
   - component: {fileID: 23906887179033432}
   - component: {fileID: 114667580130160398}
+  - component: {fileID: 122498180845190188}
   m_Layer: 2
   m_Name: PickUpTomato
   m_TagString: PickUp
@@ -105,3 +106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WeaponIndex: 5
+--- !u!122 &122498180845190188
+Halo:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758632647773878}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4278253823
+  m_Size: 5

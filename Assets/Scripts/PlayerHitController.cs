@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHitController : MonoBehaviour
 {
+    public GameObject Explosion;
     [SerializeField]
     private int hp;
 
@@ -36,7 +37,9 @@ public class PlayerHitController : MonoBehaviour
     void die(int player)
     {
         Debug.Log("DIE! DIE! DIE!");
-        BattleArenaManager.instance.AddPlayerKill(player);
+        Instantiate(Explosion, transform.position, Quaternion.identity);
+        if(player!= -1)
+            BattleArenaManager.instance.AddPlayerKill(player);
         StartCoroutine(respawn());
         //respawn
     }

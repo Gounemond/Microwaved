@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Egg : Weapon
 {
+    public GameObject Explosion;
     [SerializeField]
     private float explosionRadius;
     [SerializeField]
@@ -37,6 +38,7 @@ public class Egg : Weapon
 
     void explode()
     {
+        Instantiate(Explosion, transform.position, Quaternion.identity);
         speed = 0;
         Collider[] hits = Physics.OverlapSphere(transform.position, explosionRadius);
         //TODO Danneggia i giocatori
@@ -51,8 +53,10 @@ public class Egg : Weapon
             audioSource.clip = HitAudio;
             audioSource.Play();
             anim.SetTrigger("Hit");
-            Destroy(gameObject, 5f);
+            //Destroy(gameObject, 5f);
+
             playerHit(other);
+            Destroy(gameObject);
         }
         if (other.tag == ("Wall"))
         {
