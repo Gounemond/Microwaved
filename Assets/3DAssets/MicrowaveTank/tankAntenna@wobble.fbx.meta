@@ -17,6 +17,7 @@ ModelImporter:
     100018: Skin
     100020: Skin_2
     100022: //RootNode
+    100024: Skin_2_2
     400000: antenna
     400002: bn_antenna01
     400004: bn_antenna01_1
@@ -29,6 +30,7 @@ ModelImporter:
     400018: Skin
     400020: Skin_2
     400022: //RootNode
+    400024: Skin_2_2
     4300000: antenna
     7400000: C4D Animation Take
     9500000: //RootNode

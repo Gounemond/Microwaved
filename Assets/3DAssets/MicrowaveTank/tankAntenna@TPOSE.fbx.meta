@@ -19,6 +19,7 @@ ModelImporter:
     100022: Skin
     100024: Spline
     100026: //RootNode
+    100028: Skin_2
     400000: antenna
     400002: bn_antenna01
     400004: bn_antenna01_1
@@ -33,6 +34,7 @@ ModelImporter:
     400022: Skin
     400024: Spline
     400026: //RootNode
+    400028: Skin_2
     4300000: antenna
     9500000: //RootNode
     13700000: antenna
