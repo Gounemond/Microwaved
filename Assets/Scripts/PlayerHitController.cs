@@ -51,6 +51,7 @@ public class PlayerHitController : MonoBehaviour
         yield return new WaitForSeconds(2f);*/
         transform.position = BattleArenaElements.instance.spawnPosition[rnd].position;
         hp = 100;
+        rigid.velocity = Vector3.zero;
         yield return 0;
     }
 }
