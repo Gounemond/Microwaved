@@ -63,6 +63,9 @@ public class PodPlayerController : MonoBehaviour {
             if (_rewiredPlayer.GetButton("Cooking") && _podAnimEnded)
             {
                 microwaveCooking.Play();
+                MenuGUIManager.instance.KeyACompleted(playerId);
+                MenuGUIManager.instance.KeyXCompleted(playerId);
+                MenuGUIManager.instance.KeyXPressed(playerId);
                 _selectionConfirmed = true;
 
                 if (OnMicrowaveSelected != null)
@@ -112,6 +115,9 @@ public class PodPlayerController : MonoBehaviour {
             playerMicrowave1.transform.rotation = microwaveSpawnLocation1.rotation;
             playerMicrowave1.transform.parent = microwaveSpawnLocation1;
         }
+
+        MenuGUIManager.instance.KeyAPressed(playerId);
+        MenuGUIManager.instance.KeyXAppear(playerId);
 
         // After having the microwave spawned, turns the platform
         StartCoroutine(TurnPlatform());

@@ -28,6 +28,7 @@ public class BattleArenaManager : MonoBehaviour
             DestroyObject(gameObject);
         }
 
+        // Spawn microwaves and assign them the players
         for (int i = 0; i < GameData.playerData.Count; i++)
         {
             microwavePlayer[i] = (GameObject)Instantiate(microwavePrefab[GameData.playerData[i].microwaveSelected], spawnPosition[i].position, Quaternion.identity);
@@ -37,17 +38,21 @@ public class BattleArenaManager : MonoBehaviour
 
     IEnumerator Start()
     {
-        //Intro
-        yield return new WaitForSeconds(1);
-        /*for (int i = 0; i < GameData.playerData.Count; i++)
+        // Assign player colors and apply kinematic to keep them steady
+        for (int i = 0; i < GameData.playerData.Count; i++)
         {
-            microwavePlayer[i] = (GameObject)Instantiate(microwavePrefab[GameData.playerData[i].microwaveSelected],spawnPosition[i].position, Quaternion.identity);
-            microwavePlayer[i].GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId = i;
-        }*/
-        //Spawn players
+            //microwavePlayer[i].GetComponent<Renderer>().material.color = playerColor[i];
+            microwavePlayer[i].GetComponent<Rigidbody>().isKinematic = true;
+        }
 
+        yield return StartCoroutine(CountDown());
 
-        //Countdown
+        // Remove kinematic from players to let them move
+        for (int i = 0; i < GameData.playerData.Count; i++)
+        {
+            microwavePlayer[i].GetComponent<Rigidbody>().isKinematic = false;
+        }
+
 
         //Gameplay
 
@@ -57,6 +62,26 @@ public class BattleArenaManager : MonoBehaviour
 
         //Reload menu
         yield return null;
+    }
+
+    IEnumerator CountDown()
+    {
+        yield return new WaitForSeconds(2);
+        // CountDown with voiceover and GUI
+        // GUI Call
+        BattleArenaElements.instance.casterAudioSource.PlayOneShot(BattleArenaElements.instance.vo_Three);
+        yield return new WaitForSeconds(1);
+
+        // GUI Call
+        BattleArenaElements.instance.casterAudioSource.PlayOneShot(BattleArenaElements.instance.vo_Two);
+        yield return new WaitForSeconds(1);
+
+        // GUI Call
+        BattleArenaElements.instance.casterAudioSource.PlayOneShot(BattleArenaElements.instance.vo_One);
+        yield return new WaitForSeconds(1);
+
+        // GUI Call
+        BattleArenaElements.instance.casterAudioSource.PlayOneShot(BattleArenaElements.instance.vo_LetsMicrowave);
     }
 
     // Update is called once per frame

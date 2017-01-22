@@ -6,6 +6,7 @@ using Rewired;
 
 public class MenuSelectionController : MonoBehaviour
 {
+    public MenuGUIManager guiManager;
     public PodPlayerController[] podPlayer;
 
     public List<int> playerMicrowave;
