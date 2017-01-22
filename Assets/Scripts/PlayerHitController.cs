@@ -47,9 +47,10 @@ public class PlayerHitController : MonoBehaviour
     IEnumerator respawn()
     {
         int rnd = Random.Range(0, 4);
-        transform.position = BattleArenaElements.instance.spawnPositionUnderground[rnd].position;
-        yield return new WaitForSeconds(2f);
+        /*transform.position = BattleArenaElements.instance.spawnPositionUnderground[rnd].position;
+        yield return new WaitForSeconds(2f);*/
         transform.position = BattleArenaElements.instance.spawnPosition[rnd].position;
         hp = 100;
+        yield return 0;
     }
 }
