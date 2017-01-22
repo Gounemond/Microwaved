@@ -35,7 +35,7 @@ public class PlayerWeaponHandler : MonoBehaviour
     {
         if (_player.GetButtonDown("Attacking") && canHatch)
             openHatch();
-        if (_player.GetButtonDown("Cooking") && currentWeaponIndex != -1)
+        if (_player.GetButton("Cooking") && currentWeaponIndex != -1)
             cook();
 	}
 
@@ -60,6 +60,10 @@ public class PlayerWeaponHandler : MonoBehaviour
                 if (c.tag == "PickUp")
                 {
                     currentWeaponIndex = c.gameObject.GetComponent<PickUp>().Pick();
+                }
+                if (c.tag == "Player" && c.gameObject != gameObject)
+                {
+
                 }
             }
         }

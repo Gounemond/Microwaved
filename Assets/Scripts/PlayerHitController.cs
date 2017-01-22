@@ -30,11 +30,14 @@ public class PlayerHitController : MonoBehaviour
         rigid.AddForce(knockBack, ForceMode.Impulse);
         hp -= damage;
         if (hp <= 0)
-            die();
+            die(player);
     }
 
-    void die()
+    void die(int player)
     {
-
+        Debug.Log("DIE! DIE! DIE!");
+        BattleArenaManager.instance.AddPlayerKill(player);
+        
+        //respawn
     }
 }
