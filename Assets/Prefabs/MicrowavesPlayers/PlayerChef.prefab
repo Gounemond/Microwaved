@@ -25,7 +25,6 @@ GameObject:
   - component: {fileID: 114693987108920358}
   - component: {fileID: 114073645059116850}
   - component: {fileID: 114468341851837522}
-  - component: {fileID: 122859484514157700}
   m_Layer: 0
   m_Name: PlayerChef
   m_TagString: GameController
@@ -1666,8 +1665,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1002414577730164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.634447, y: 1.068497e-17, z: -8.55}
+  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 1.068497e-17, z: -0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4805976838233280}
@@ -1680,7 +1679,7 @@ Transform:
   - {fileID: 4791867880787644}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
 --- !u!4 &4232043096286994
 Transform:
   m_ObjectHideFlags: 1
@@ -4057,7 +4056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1478c7c233c0fd4bb33fb77b31f4b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 0
+  playerId: 2
 --- !u!114 &114752636050395616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4122,17 +4121,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wheel: {fileID: 1436886573607404}
---- !u!122 &122859484514157700
-Halo:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1002414577730164}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278518015
-  m_Size: 7
 --- !u!137 &137229183362872030
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

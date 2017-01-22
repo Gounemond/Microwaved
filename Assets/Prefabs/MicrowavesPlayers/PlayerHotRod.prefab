@@ -1038,7 +1038,6 @@ GameObject:
   - component: {fileID: 114163254795267320}
   - component: {fileID: 114861648585649772}
   - component: {fileID: 114846992991188240}
-  - component: {fileID: 122719077028782836}
   m_Layer: 0
   m_Name: PlayerHotRod
   m_TagString: GameController
@@ -1381,8 +1380,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1895189546939390}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.634447, y: 1.068497e-17, z: -15.66}
+  m_LocalRotation: {x: -0, y: 0.32821977, z: -0, w: 0.9446014}
+  m_LocalPosition: {x: 0, y: 1.068497e-17, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4610818632581792}
@@ -1395,7 +1394,7 @@ Transform:
   - {fileID: 4710067339805238}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 38.322002, z: 0}
 --- !u!4 &4336503002439166
 Transform:
   m_ObjectHideFlags: 1
@@ -3453,7 +3452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1478c7c233c0fd4bb33fb77b31f4b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 0
+  playerId: 2
 --- !u!114 &114165324045277124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3696,17 +3695,6 @@ MonoBehaviour:
   cookLevel: 2
   cookSpeed: 1
   knockbackForce: 60000
---- !u!122 &122719077028782836
-Halo:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1895189546939390}
-  m_Enabled: 1
-  m_Color:
-    serializedVersion: 2
-    rgba: 4278518015
-  m_Size: 7
 --- !u!137 &137002179320752442
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
