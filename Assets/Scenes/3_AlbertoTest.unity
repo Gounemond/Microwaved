@@ -1160,26 +1160,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 114522721448214156, guid: a1b8e950735785d478a368bc3254d340,
-        type: 2}
-      propertyPath: Mask.m_Bits
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114522721448214156, guid: a1b8e950735785d478a368bc3254d340,
-        type: 2}
-      propertyPath: StartingItems
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114522721448214156, guid: a1b8e950735785d478a368bc3254d340,
-        type: 2}
-      propertyPath: MaxTime
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114522721448214156, guid: a1b8e950735785d478a368bc3254d340,
-        type: 2}
-      propertyPath: MinTime
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a1b8e950735785d478a368bc3254d340, type: 2}
   m_IsPrefabParent: 0

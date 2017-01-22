@@ -11,6 +11,8 @@ public class PlayerWeaponHandler : MonoBehaviour
     private float cookLevel;
     [SerializeField]
     private float cookSpeed;
+    [SerializeField]
+    private float knockbackForce;
 
     private int currentWeaponIndex; //-1 for no weapon
 
@@ -57,6 +59,17 @@ public class PlayerWeaponHandler : MonoBehaviour
     {
         StartCoroutine(resetHatch());
         hatchIsOpen();
+        Collider[] col = Physics.OverlapBox(weaponShootSpawn.position, new Vector3(1, 1, 2));
+        foreach (Collider c in col)
+        {
+            if (c.tag == "Player" && c.gameObject != gameObject)
+            {
+                Vector3 hitDirection = (c.transform.position - transform.position);
+                hitDirection.Normalize();
+                c.transform.parent.parent.GetComponent<PlayerHitController>().HitYou(1, hitDirection * knockbackForce, _player.id);
+                Debug.Log(hitDirection * knockbackForce);
+            }
+        }
         canHatch = false;
         if(currentWeaponIndex != -1)
         {
@@ -74,8 +87,9 @@ public class PlayerWeaponHandler : MonoBehaviour
                     go = Instantiate(Weapons[currentWeaponIndex], weaponShootSpawn.position, weaponShootSpawn.rotation, transform);
                     go.GetComponent<Weapon>().SetPlayerId(_player.id);
                 }
+                removeWeapon();
             }
-            removeWeapon();
+
         }
         //currentWeaponIndex = (currentWeaponIndex + 1) % 6;
     }
