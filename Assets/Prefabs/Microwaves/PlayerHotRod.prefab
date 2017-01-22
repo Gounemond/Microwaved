@@ -3572,9 +3572,9 @@ MonoBehaviour:
   m_MaximumSteerAngle: 45
   m_SteerHelper: 0.423
   m_TractionControl: 0
-  m_FullTorqueOverAllWheels: 10000
+  m_FullTorqueOverAllWheels: 12000
   m_ReverseTorque: 1000
-  m_MaxHandbrakeTorque: 100
+  m_MaxHandbrakeTorque: 10000
   m_Downforce: 500
   m_SpeedType: 1
   m_Topspeed: 200
@@ -3689,9 +3689,11 @@ MonoBehaviour:
   - {fileID: 1002322457458630, guid: e2eed653c68d0824d99a75a4cc96fd5c, type: 2}
   - {fileID: 1073820432086520, guid: 47746892334e681468e93512b5db5885, type: 2}
   - {fileID: 1049866096944894, guid: 45062e8016661074692c13e4b19a1be1, type: 2}
+  BoneWithHatchAnimator: {fileID: 1017675016316478}
+  ObjectWithOwnCollider: {fileID: 1710425609786366}
   cookLevel: 2
   cookSpeed: 1
-  knockbackForce: 0
+  knockbackForce: 15000
 --- !u!137 &137002179320752442
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

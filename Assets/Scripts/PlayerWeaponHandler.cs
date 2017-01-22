@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Rewired;
+using UnityStandardAssets.Vehicles.Car;
 
 public class PlayerWeaponHandler : MonoBehaviour
 {
     public GameObject[] Weapons;
+    public GameObject BoneWithHatchAnimator;
+    public GameObject ObjectWithOwnCollider;
 
     [SerializeField]
     private float cookLevel;
@@ -23,13 +26,20 @@ public class PlayerWeaponHandler : MonoBehaviour
     private bool canHatch = true;
     private bool cooked = false;
 
+    private Animator anim;
+
+    private Collider ownCollider;
+
     private float currentCookLevel;
+
 	// Use this for initialization
 	void Awake ()
     {
         _player = ReInput.players.GetPlayer(GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId);
         weaponShootSpawn = transform.FindChild("WeaponShootSpawn");
         currentWeaponIndex = -1;
+        anim = BoneWithHatchAnimator.GetComponent<Animator>();
+        ownCollider = ObjectWithOwnCollider.GetComponent<Collider>();
 	}
 	
 	// Update is called once per frame
@@ -62,7 +72,7 @@ public class PlayerWeaponHandler : MonoBehaviour
         Collider[] col = Physics.OverlapBox(weaponShootSpawn.position, new Vector3(1, 1, 2));
         foreach (Collider c in col)
         {
-            if (c.tag == "Player" && c.gameObject != gameObject)
+            if (c.tag == "Player" && c != ownCollider)
             {
                 Vector3 hitDirection = (c.transform.position - transform.position);
                 hitDirection.Normalize();
@@ -122,7 +132,9 @@ public class PlayerWeaponHandler : MonoBehaviour
 
     IEnumerator resetHatch()
     {
+        anim.SetBool("Open", true);
         yield return new WaitForSeconds(2);
+        anim.SetBool("Open", false);
         canHatch = true;
     }
 }

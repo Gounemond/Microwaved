@@ -14,7 +14,7 @@ public class CameraHandler : MonoBehaviour
     private Vector3 currentVelocity;
 
     private float smooth = 0.3f;
-    private float planeSmooth = 0.05f;
+    private float planeSmooth = 0.1f;
 
     // Use this for initialization
     void Start()
@@ -80,7 +80,7 @@ public class CameraHandler : MonoBehaviour
         //Debug.Log("MaxXY:  " + maxXY + "   MinXY:   " + minXY + "  MaxYZ:  " + maxYZ + "  MinYZ:   " + minYZ);
 
         //precedenza all'allontanamento
-        if (maxXY > 130 || minXY < 50 || maxYZ > 70 || minYZ < 45) //Danger zone
+        if (maxXY > 130 || minXY < 50 || maxYZ > 70 || minYZ < 50) //Danger zone
         {
             if (maxXY > 138 || minXY < 42)
             {

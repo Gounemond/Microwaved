@@ -5644,7 +5644,7 @@ Transform:
   - {fileID: 4196880952027114}
   m_Father: {fileID: 4310538102202146}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.5968199e-14, y: 112.36478, z: 3.1566906e-15}
 --- !u!4 &4089147820775352
 Transform:
   m_ObjectHideFlags: 1
@@ -10494,7 +10494,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1999525903355634}
   serializedVersion: 2
-  m_Mass: 1000
+  m_Mass: 1100
   m_Drag: 0.1
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -11066,9 +11066,11 @@ MonoBehaviour:
   - {fileID: 1002322457458630, guid: e2eed653c68d0824d99a75a4cc96fd5c, type: 2}
   - {fileID: 1073820432086520, guid: 47746892334e681468e93512b5db5885, type: 2}
   - {fileID: 1049866096944894, guid: 45062e8016661074692c13e4b19a1be1, type: 2}
+  BoneWithHatchAnimator: {fileID: 1336422909330382}
+  ObjectWithOwnCollider: {fileID: 1624238570075562}
   cookLevel: 2
   cookSpeed: 1
-  knockbackForce: 0
+  knockbackForce: 30000
 --- !u!114 &114303221250808872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11130,7 +11132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1478c7c233c0fd4bb33fb77b31f4b45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerId: 1
+  playerId: 0
 --- !u!114 &114550360225030876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11201,7 +11203,7 @@ MonoBehaviour:
   m_TractionControl: 0
   m_FullTorqueOverAllWheels: 10000
   m_ReverseTorque: 1000
-  m_MaxHandbrakeTorque: 100
+  m_MaxHandbrakeTorque: 10000
   m_Downforce: 500
   m_SpeedType: 1
   m_Topspeed: 200
