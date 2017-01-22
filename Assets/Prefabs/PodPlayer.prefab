@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 65447653654846596}
   - component: {fileID: 95028374054105726}
   m_Layer: 0
-  m_Name: PodPlayer1
+  m_Name: PodPlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

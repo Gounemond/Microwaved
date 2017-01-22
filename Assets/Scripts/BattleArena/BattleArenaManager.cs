@@ -86,7 +86,6 @@ public class BattleArenaManager : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-		// Debug vari
 	}
 
     /// <summary>

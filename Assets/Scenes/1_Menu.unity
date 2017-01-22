@@ -692,6 +692,12 @@ MonoBehaviour:
   - {fileID: 1199341256}
   - {fileID: 699963937}
   - {fileID: 1282700694}
+--- !u!114 &442006779 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114310928895043568, guid: 0f364c1d8da70a044b0d8a585780d7f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1296667657}
+  m_Script: {fileID: 11500000, guid: ef2403bcb694e3744b205bf8f91d7499, type: 3}
 --- !u!1 &448465748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,6 +1529,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224356120428827492, guid: 5ac857d94fa11084f9270372810e49a2,
     type: 2}
   m_PrefabInternal: {fileID: 1664292469}
+--- !u!114 &1484514083 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114310928895043568, guid: 0f364c1d8da70a044b0d8a585780d7f8,
+    type: 2}
+  m_PrefabInternal: {fileID: 750536634}
+  m_Script: {fileID: 11500000, guid: ef2403bcb694e3744b205bf8f91d7499, type: 3}
 --- !u!1 &1541045358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,6 +1889,8 @@ MonoBehaviour:
   podPlayer:
   - {fileID: 1864073189}
   - {fileID: 1188419231}
+  - {fileID: 442006779}
+  - {fileID: 1484514083}
   playerMicrowave: 
   countdownAudioSource: {fileID: 1592626328}
 --- !u!114 &1864073189 stripped

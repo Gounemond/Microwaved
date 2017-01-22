@@ -1,18 +1,18 @@
 fileFormatVersion: 2
-guid: ca24cfb5008cd284894a3d0760dcc0d9
-timeCreated: 1485043856
+guid: 8917bda94a800c74289457b6338409ea
+timeCreated: 1485049932
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: be_sportelloEND01
-    100002: bn_sportelloA01
+    100002: bn_sportello01
     100004: DOOR
     100006: //RootNode
     100008: ROOT_MESH
     100010: Skin
     400000: be_sportelloEND01
-    400002: bn_sportelloA01
+    400002: bn_sportello01
     400004: DOOR
     400006: //RootNode
     400008: ROOT_MESH
@@ -45,7 +45,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 2.5
+    globalScale: 6
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
