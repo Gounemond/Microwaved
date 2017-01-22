@@ -12,6 +12,7 @@ public class WeaponSpawner : MonoBehaviour
 
     private Transform[] spawnPoints;
 
+
     private float currentTime;
     private bool randomTry = true;
 	// Use this for initialization
@@ -52,7 +53,7 @@ public class WeaponSpawner : MonoBehaviour
                 }
             }
             count++;
-        } while (exit == false || count < 30);
+        } while (exit == false && count < 30);
         if(exit && count < 30)
             Instantiate(PickUps[Random.Range(0, PickUps.Length)], pos, Quaternion.identity);
         currentTime = 0;
