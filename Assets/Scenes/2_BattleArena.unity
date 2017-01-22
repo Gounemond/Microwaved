@@ -1165,8 +1165,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881e925b4d19473409b979ecb57dd9fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnPosition: []
-  spawnPositionUnderground: []
+  spawnPosition:
+  - {fileID: 681955745}
+  - {fileID: 18582053}
+  - {fileID: 354488833}
+  - {fileID: 1840864930}
+  spawnPositionUnderground:
+  - {fileID: 1876534637}
+  - {fileID: 1747477278}
+  - {fileID: 827965779}
+  - {fileID: 1018424483}
   casterAudioSource: {fileID: 125290969}
   dingAudioSource: {fileID: 1748724617}
   vo_Three: {fileID: 8300000, guid: 7b5e469f0c354b84bb940591f9cc48f5, type: 3}
