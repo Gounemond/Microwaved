@@ -82,6 +82,7 @@ public class PlayerWeaponHandler : MonoBehaviour
                 audSource.clip = CookingDone;
                 audSource.loop = false;
                 audSource.Play();
+                currentCookLevel = 0;
             }
 
         }
