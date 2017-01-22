@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 using UnityEngine;
 
@@ -13,6 +14,8 @@ public class BattleArenaManager : MonoBehaviour
     public GameObject[] microwavePrefab;
 
     public GameObject[] microwavePlayer;
+
+    public PlayerDisk[] playerBobs;
 
     
 
@@ -33,6 +36,8 @@ public class BattleArenaManager : MonoBehaviour
         {
             microwavePlayer[i] = (GameObject)Instantiate(microwavePrefab[GameData.playerData[i].microwaveSelected], BattleArenaElements.instance.spawnPosition[i].position, Quaternion.identity);
             microwavePlayer[i].GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId = i;
+            playerBobs[i].SetPlayerToFollowe(microwavePlayer[i].transform);
+            playerBobs[i].GetComponent<SpriteRenderer>().color = playerColor[i];
         }
     }
 
@@ -55,8 +60,10 @@ public class BattleArenaManager : MonoBehaviour
 
 
         //Gameplay
+        yield return new WaitForSeconds(180);
 
         //Ending
+        SceneManager.LoadScene(0);
 
         //Leaderboard
 
