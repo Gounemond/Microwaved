@@ -16,6 +16,7 @@ public class BattleArenaElements : MonoBehaviour {
         }
     }
     public Transform[] spawnPosition;
+    public Transform[] spawnPositionUnderground;
 
     [Header("Audio stuff")]
     public AudioSource casterAudioSource;
