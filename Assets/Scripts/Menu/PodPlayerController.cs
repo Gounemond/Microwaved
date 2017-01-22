@@ -60,7 +60,7 @@ public class PodPlayerController : MonoBehaviour {
                 SelectNextMicrowave();
             }
 
-            if (_rewiredPlayer.GetButton("Cooking") && _podAnimEnded)
+            if (_rewiredPlayer.GetButton("Cooking") && _podAnimEnded && microwaveClassSelected > -1)
             {
                 microwaveCooking.Play();
                 MenuGUIManager.instance.KeyACompleted(playerId);

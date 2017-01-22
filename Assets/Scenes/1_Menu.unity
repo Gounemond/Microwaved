@@ -1969,6 +1969,23 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 33143354590611428, guid: 0f364c1d8da70a044b0d8a585780d7f8,
+        type: 2}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 4070821063473302, guid: 0f364c1d8da70a044b0d8a585780d7f8, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070821063473302, guid: 0f364c1d8da70a044b0d8a585780d7f8, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4070821063473302, guid: 0f364c1d8da70a044b0d8a585780d7f8, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f364c1d8da70a044b0d8a585780d7f8, type: 2}
   m_IsPrefabParent: 0
