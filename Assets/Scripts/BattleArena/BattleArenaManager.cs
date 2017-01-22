@@ -14,7 +14,7 @@ public class BattleArenaManager : MonoBehaviour
 
     public GameObject[] microwavePlayer;
 
-    public Transform[] spawnPosition;
+    
 
     // Use this for initialization
     void Awake()
@@ -31,7 +31,7 @@ public class BattleArenaManager : MonoBehaviour
         // Spawn microwaves and assign them the players
         for (int i = 0; i < GameData.playerData.Count; i++)
         {
-            microwavePlayer[i] = (GameObject)Instantiate(microwavePrefab[GameData.playerData[i].microwaveSelected], spawnPosition[i].position, Quaternion.identity);
+            microwavePlayer[i] = (GameObject)Instantiate(microwavePrefab[GameData.playerData[i].microwaveSelected], BattleArenaElements.instance.spawnPosition[i].position, Quaternion.identity);
             microwavePlayer[i].GetComponent<UnityStandardAssets.Vehicles.Car.CarUserControlRewired>().playerId = i;
         }
     }
