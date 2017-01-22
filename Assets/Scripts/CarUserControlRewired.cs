@@ -31,7 +31,7 @@ namespace UnityStandardAssets.Vehicles.Car
             float h = rewiredPlayer.GetAxis("Steering");
             float v = rewiredPlayer.GetAxis("Moving") ;
 #if !MOBILE_INPUT
-            float handbrake = CrossPlatformInputManager.GetAxis("Jump");
+            float handbrake = rewiredPlayer.GetAxis("Handbrake");
             m_Car.Move(h, v, v, handbrake);
 #else
             m_Car.Move(h, v, v, 0f);
