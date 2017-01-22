@@ -133,7 +133,7 @@ Transform:
   m_GameObject: {fileID: 1334337430254750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.39, y: 0, z: -9.45}
-  m_LocalScale: {x: 8, y: 0.2, z: 8}
+  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
   m_Children:
   - {fileID: 4127375132248972}
   - {fileID: 4750998660490554}
@@ -163,13 +163,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1462311052938916}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalRotation: {x: 0, y: 0.17364816, z: 0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 0.254, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4070821063473302}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 20, z: 0}
 --- !u!4 &4161186455709440
 Transform:
   m_ObjectHideFlags: 1
@@ -202,13 +202,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1651558947735702}
-  m_LocalRotation: {x: 1, y: 0, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: -10, z: 0}
+  m_LocalRotation: {x: 0.17364825, y: 0, z: -0.9848078, w: 0}
+  m_LocalPosition: {x: 0, y: -0.254, z: 0}
   m_LocalScale: {x: 1, y: 0.99999994, z: 1}
   m_Children: []
   m_Father: {fileID: 4070821063473302}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 180, y: 160, z: 0}
 --- !u!4 &4897253898144570
 Transform:
   m_ObjectHideFlags: 1
@@ -259,7 +259,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1334337430254750}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: 7579951709c17e641930edb2bfaa2bb6, type: 3}
 --- !u!65 &65447653654846596
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -624,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef2403bcb694e3744b205bf8f91d7499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  microwaveClassSelected: 0
+  microwaveClassSelected: -1
   podAnimator: {fileID: 95028374054105726}
   podTurningAnim: {fileID: 7400000, guid: 324960a23b5161a4dbf9a172270808d0, type: 2}
   microwaveSpawnLocation1: {fileID: 4127375132248972}
@@ -635,8 +635,8 @@ MonoBehaviour:
   microwaveEngine: {fileID: 82381573811318604}
   microwaveCooking: {fileID: 82728386261592790}
   microwavePrefab:
-  - {fileID: 100006, guid: beabbc06605c5e74b9252329f02d2dc8, type: 3}
-  - {fileID: 100064, guid: 2393f7f40de557542a5055122bd874f6, type: 3}
-  - {fileID: 100004, guid: 1bcc0bb79c5895341954aa5f366e1955, type: 3}
-  - {fileID: 100006, guid: 61943067125968a4ebfea5f056128755, type: 3}
+  - {fileID: 1022481046664294, guid: 5cd25d6f3cefa404785a7a84ecfc1858, type: 2}
+  - {fileID: 1999525903355634, guid: f5d2588bef6cdc7438ab47f69e1abab6, type: 2}
+  - {fileID: 1002414577730164, guid: bca33043507e49a4abb7a45237ea1b7a, type: 2}
+  - {fileID: 1895189546939390, guid: 7db4ce38f4a06c4419c659769ae2076c, type: 2}
   playerId: 0
