@@ -3902,9 +3902,11 @@ MonoBehaviour:
   - {fileID: 1002322457458630, guid: e2eed653c68d0824d99a75a4cc96fd5c, type: 2}
   - {fileID: 1073820432086520, guid: 47746892334e681468e93512b5db5885, type: 2}
   - {fileID: 1049866096944894, guid: 45062e8016661074692c13e4b19a1be1, type: 2}
+  BoneWithHatchAnimator: {fileID: 1604266631645716}
+  ObjectWithOwnCollider: {fileID: 1235262509671346}
   cookLevel: 2
   cookSpeed: 1
-  knockbackForce: 0
+  knockbackForce: 20000
 --- !u!114 &114104284083959254
 MonoBehaviour:
   m_ObjectHideFlags: 1
