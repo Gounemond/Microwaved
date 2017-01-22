@@ -10,6 +10,8 @@ public class MenuSelectionController : MonoBehaviour
 
     public List<int> playerMicrowave;
 
+    public AudioSource countdownAudioSource;
+
 	// Use this for initialization
 	IEnumerator Start ()
     {
@@ -29,13 +31,17 @@ public class MenuSelectionController : MonoBehaviour
 
         //Countdown: 3
         yield return new WaitForSeconds(1);
+        countdownAudioSource.Play();
 
         //Countdown: 2
         yield return new WaitForSeconds(1);
+        countdownAudioSource.Play();
 
         //Countdown: 1
         yield return new WaitForSeconds(1);
+        countdownAudioSource.Play();
 
+        yield return new WaitForSeconds(1);
         // Load next level
         GameData.playerData.Sort();
 
