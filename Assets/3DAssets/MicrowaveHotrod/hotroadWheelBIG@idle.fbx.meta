@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 1dc09aebaea95124aa31df3738b4274e
-timeCreated: 1485049932
+guid: cabfc044a36a0104199d18e72ec720a5
+timeCreated: 1485049933
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: be_sportelloEND01
-    100002: bn_sportello01
-    100004: DOOR
-    100006: //RootNode
-    100008: ROOT_MESH
-    100010: Skin
-    400000: be_sportelloEND01
-    400002: bn_sportello01
-    400004: DOOR
-    400006: //RootNode
-    400008: ROOT_MESH
-    400010: Skin
-    4300000: DOOR
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: ruota_4
     9500000: //RootNode
-    13700000: DOOR
   materials:
     importMaterials: 1
     materialName: 0
@@ -60,8 +51,8 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
-    normalImportMode: 0
+    normalSmoothAngle: 180
+    normalImportMode: 1
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
